@@ -9,7 +9,9 @@
     "microphone-debug": "electron scripts/microphone-debug/main.js",
     "train-model": "electron scripts/train-model.js",
     "sonus": "node sonus.js",
-    "wiredep": "wiredep -s index.html"
+    "wiredep": "wiredep -s index.html",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -41,6 +43,8 @@
     "express": "^4.13.4",
     "fitbit-oauth2": "0.0.1",
     "hyperion-client": "1.0.3",
-    "sonus": "0.1.0"
-  }
+    "sonus": "0.1.8",
+    "snyk": "^1.83.0"
+  },
+  "snyk": true
 }
